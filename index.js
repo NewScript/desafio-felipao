@@ -1,6 +1,8 @@
+const h1 = document.querySelector('h1');
+
 let name = 'Programador Solitário';
 let xp = 8332;
-let level = '',
+let level = '';
 
 if( xp <= 1000){
   level = 'Ferro';
@@ -18,6 +20,6 @@ if( xp <= 1000){
   level = 'Imortal';
 }else{
   level = 'Radiante';
-}
+};
 
-console.log("O Herói de nome **{"+name+"}** está no nível de **{"+level+"}**")
+h1.innerText = "O Herói de nome **{"+name+"}** está no nível de **{"+level+"}**";
